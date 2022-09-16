@@ -23,8 +23,8 @@ public class SigninActivity extends AppCompatActivity {
         btn_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String strName = editName.getText().toString().trim();
-                Intent intent = new Intent(SigninActivity.this, LoginActivity.class);
+                String strName = editName.getText().toString();
+                Intent intent = new Intent(SigninActivity.this, MainActivity.class);
                 intent.putExtra(  "key_name", strName);
 
                 startActivity(intent);

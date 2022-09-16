@@ -19,8 +19,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         btn_login = findViewById(R.id.btn_login);
-        editName = findViewById(R.id.edit_Name);
-        editName.setText(getIntent().getStringExtra("key_name"));
+
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(LoginActivity.this, SigninActivity.class);
                 startActivity(intent);
+
             }
         });
 
